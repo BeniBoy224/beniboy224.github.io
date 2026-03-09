@@ -1,0 +1,13 @@
+{
+  "projects": [
+    {
+      "project_name": "Inventory Tracker",
+      "description": "TEST",
+      "dev_timeline": "Still in development",
+      "start_date": "August 2025",
+      "end_date": "Ongoing",
+      "link": null,
+      "skills": "Typescript, Adinos JS, Electron, React, MySql"
+    }
+  ]
+}

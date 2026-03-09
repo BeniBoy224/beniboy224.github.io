@@ -1,0 +1,29 @@
+---
+import projectsData from "../../public/data/projects.json"
+const projects = projectsData.projects ?? [];
+---
+
+<section>
+  <h3 class="text-5xl mb-4 underline underline-offset-8 decoration-blue-500">Projects</h3>
+  <div>
+    {projects.map((project) => (
+      <article>
+        <h4 class="font-semibold text-xl mb-2">{project.project_name}</h4>
+        <div class="flex gap-2">
+          <div class="w-1 bg-blue-500"></div>
+          <div>
+            <span class="text-blue-500">{project.start_date} - {project.end_date}</span>
+            <p class="text-sm text-gray-600 dark:text-gray-300">{project.description}</p>
+            {project.skills && (
+              <div class="mt-2">
+                <span class="font-semibold">Technologies:</span>
+                {project.skills}
+              </div>
+            )}
+          </div>
+        </div>
+      </article>
+    ))}
+  </div>
+</section>
+

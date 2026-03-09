@@ -1,23 +1,59 @@
+---
+import moon from "../assets/moon.svg";
+import sun from "../assets/sun.svg";
+---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" href="/favicon.ico" />
+  <link href="/src/styles/global.css" rel="stylesheet">
+  <meta name="generator" content={Astro.generator} />
+  <title>Astro Basics</title>
+</head>
+<body>
+  <header>
+		<div>
+      <button id="theme-toggle" class="absolute top-0 right-0 pl-10 pb-10 bg-blue-900 dark:bg-amber-300 rounded-bl-full">
+        <img src={moon.src} alt="Moon icon" class="block dark:hidden pt-3 pr-3" />
+        <img src={sun.src} alt="Sun icon" class="hidden dark:block pt-3 pr-3" />
+      </button>
+		</div>
+  </header>
+  <main class="px-48 py-28">
+    <slot />
+  </main>
+</body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
+  html, body {
+    background-color: #eae8e8;
 		height: 100%;
-	}
+  }
+  html.dark body {
+    background-color: #031424;
+    color: #fff;
+  }
 </style>
+
+<script>
+  // Apply saved theme on load
+  if (
+    localStorage.theme === "dark" ||
+    (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+  ) {
+    document.documentElement.classList.add("dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
+
+  // Attach listener after DOM is ready
+  document.getElementById("theme-toggle")?.addEventListener("click", () => {
+    const isDark = document.documentElement.classList.toggle("dark");
+    localStorage.theme = isDark ? "dark" : "light";
+  });
+</script>

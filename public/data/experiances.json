@@ -1,0 +1,12 @@
+{
+  "experiances": [
+    {
+      "experiance_name": "Inventory Tracker",
+      "description": "TEST",
+      "start_date": "August 2025",
+      "end_date": "Ongoing",
+      "link": null,
+      "skills": "Typescript, Adinos JS, Electron, React, MySql"
+    }
+  ]
+}
