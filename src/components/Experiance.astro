@@ -12,9 +12,10 @@ const experiances = experiancesData.experiances ?? [];
         <div class="flex gap-2">
           <div class="w-1 bg-blue-500"></div>
           <div>
-            <a href={experiance.experiance_place_url} target="_blank" rel="noopener noreferrer">{experiance.experiance_place} | </a>
+            <a href={experiance.experiance_place_url} target="_blank" rel="noopener noreferrer" class="hover:underline hover:decoration-blue-500">{experiance.experiance_place}</a>
+            {experiance.experiance_place_url ? (<span> | </span>) : (<span></span>)}
             <span class="text-blue-500">{experiance.start_date} - {experiance.end_date}</span>
-            <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">{experiance.description}</p>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mt-2" set:html={experiance.description} />
             {experiance.skills && (
               <div class="mt-2">
                 <span class="font-semibold">Technologies:</span>

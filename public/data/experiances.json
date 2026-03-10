@@ -4,21 +4,21 @@
       "experiance_name": "Junior Software Developer",
       "experiance_place": "Arthur J Gallagher",
       "experiance_place_url": "https://www.ajg.com/uk",
-      "description": "During my time I have worked on various projects including data migrations between on-premise solutions into the cloud, updates to software and taking on projects as the lead dev with full control on how the application will be built out.",
+      "description": "Throughout my career, I have delivered a range of projects spanning data migrations from on-premise infrastructure to cloud-based solutions, software updates and enhancements, and end-to-end application development as lead developer — taking full ownership of architecture, technical decisions, and delivery.",
       "start_date": "May 2024",
       "end_date": "Ongoing",
       "link": null,
-      "skills": "Sharepoint "
+      "skills": "Sharepoint, Azure, C#, .Net, SQL, PowerShell, Typescript, SPFx, Mysql"
     },
     {
       "experiance_name": "Apprentice Software Developer",
       "experiance_place": "Arthur J Gallagher",
       "experiance_place_url": "https://www.ajg.com/uk",
-      "description": "This was my first position as a software developer. I completed my apprenticeship with a Merit grade.",
+      "description": "This was my first position as a software developer. I completed my apprenticeship with a Merit grade. During this time, I gained hands-on experience in various aspects of software development, including coding, testing, and collaborating with cross-functional teams.",
       "start_date": "July 2022",
       "end_date": "May 2024",
       "link": null,
-      "skills": "Sharepoint "
+      "skills": "Sharepoint, SPFx, Typescript, Mysql, C#, Powershell"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "projects": [
     {
       "project_name": "Inventory Tracker",
-      "description": "This is a project for a local business that specilies in the selling and maintiance of machines that help with the manufacturing of circuit boards. This applcation was to help manage one part of the buisness which is the inventory of feeders. At anyone time there could be thousands of feeders all with individual serial codes being logged in a spreadsheet with high margins of errors. </br> ",
+      "description": "This application was developed for a local business specialising in the sale and maintenance of machinery used in the manufacturing of circuit boards. The business operates at significant scale, managing thousands of individual feeders at any given time — each uniquely identified by a serial code. </br></br> Previously, this inventory was tracked manually via spreadsheet, a process prone to high error rates and inefficiencies given the volume of assets involved. This application was built to replace that workflow, providing a reliable and structured system for logging, tracking, and managing feeder inventory with accuracy and ease.",
       "dev_timeline": "Still in development",
       "start_date": "August 2025",
       "end_date": "Ongoing",
