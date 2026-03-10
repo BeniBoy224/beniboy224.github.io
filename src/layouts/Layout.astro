@@ -25,9 +25,14 @@ import '../styles/global.css';
       </button>
 		</div>
   </header>
-  <main class="px-6 py-6 md:px-48 md:py-28">
+  <main class="px-6 py-6 lg:px-48 lg:py-28">
     <slot />
   </main>
+  <footer>
+    <div class="px-6 py-4">
+      <p class="text-center text-gray-500 dark:text-gray-400">© {new Date().getFullYear()} beniboy224.github.io. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
 
