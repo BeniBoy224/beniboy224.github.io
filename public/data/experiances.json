@@ -1,12 +1,24 @@
 {
   "experiances": [
     {
-      "experiance_name": "Inventory Tracker",
-      "description": "TEST",
-      "start_date": "August 2025",
+      "experiance_name": "Junior Software Developer",
+      "experiance_place": "Arthur J Gallagher",
+      "experiance_place_url": "https://www.ajg.com/uk",
+      "description": "During my time I have worked on various projects including data migrations between on-premise solutions into the cloud, updates to software and taking on projects as the lead dev with full control on how the application will be built out.",
+      "start_date": "May 2024",
       "end_date": "Ongoing",
       "link": null,
-      "skills": "Typescript, Adinos JS, Electron, React, MySql"
+      "skills": "Sharepoint "
+    },
+    {
+      "experiance_name": "Apprentice Software Developer",
+      "experiance_place": "Arthur J Gallagher",
+      "experiance_place_url": "https://www.ajg.com/uk",
+      "description": "This was my first position as a software developer. I completed my apprenticeship with a Merit grade.",
+      "start_date": "July 2022",
+      "end_date": "May 2024",
+      "link": null,
+      "skills": "Sharepoint "
     }
   ]
 }

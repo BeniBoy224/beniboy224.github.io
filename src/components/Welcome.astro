@@ -1,10 +1,40 @@
 ---
-
+import infoData from "../../public/data/info.json";
+const info = infoData ?? [];
 ---
-
 <div>
-	<section class="text-black dark:text-white text-5xl flex flex-col gap-5">
-		<h1>Hi, I'm <span class="bold underline text-blue-500 font-bold">Ben</span></h1>
-		<h2>A <span class="font-bold">Software Developer</span></h2>
-	</section>
+  <section class="text-black dark:text-white text-5xl flex flex-col gap-5 w-full">
+    <h1>Hi, I'm <span class="bold underline text-blue-500 font-bold">Ben</span></h1>
+    <h2>A <span class="font-bold" id="info"></span><span id="cursor" class="animate-pulse">|</span></h2>
+  </section>
 </div>
+
+<script define:vars={{ info }}>
+  const el = document.getElementById("info");
+  let index = 0;
+  let charIndex = 0;
+  let deleting = false;
+
+  function type() {
+    const current = info[index];
+
+    if (!deleting) {
+      el.textContent = current.slice(0, ++charIndex);
+      if (charIndex === current.length) {
+        deleting = true;
+        setTimeout(type, 1500); // pause before deleting
+        return;
+      }
+    } else {
+      el.textContent = current.slice(0, --charIndex);
+      if (charIndex === 0) {
+        deleting = false;
+        index = (index + 1) % info.length;
+      }
+    }
+
+    setTimeout(type, deleting ? 50 : 100);
+  }
+
+  type();
+</script>

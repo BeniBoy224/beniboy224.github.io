@@ -1,4 +1,6 @@
 ---
+import ContactForm from '../components/ContactForm.astro';
+import Experiance from '../components/Experiance.astro';
 import InfoCard from '../components/InfoCard.astro';
 import Projects from '../components/Projects.astro';
 import Welcome from '../components/Welcome.astro';
@@ -9,11 +11,15 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<div class="grid grid-flow-col gap-6">
+	<div class="grid grid-flow-col gap-6 pb-20">
 		<Welcome />
 		<InfoCard />
 	</div>
-	<div>
+	<div class="grid gap-20">
 		<Projects />
+		<Experiance />
+	</div>
+	<div class="mt-15">
+		<ContactForm />
 	</div>
 </Layout>
